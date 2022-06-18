@@ -8,11 +8,12 @@ import (
 	"time"
 
 	"gin-simple/pkg/setting"
+	"github.com/gin-contrib/pprof"
 )
 
 func InitRouter() *gin.Engine {
 	r := gin.New()
-
+	pprof.Register(r)
 	r.Use(gin.Logger())
 
 	r.Use(gin.Recovery())

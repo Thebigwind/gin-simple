@@ -1,5 +1,7 @@
 package upload
 
+
+/*
 import (
 	"fmt"
 	"log"
@@ -74,3 +76,4 @@ func CheckImage(src string) error {
 
 	return nil
 }
+*/

@@ -1,5 +1,5 @@
 package rest
-
+/*
 import (
 	"gin-simple/pkg/e"
 	"gin-simple/pkg/logging"
@@ -8,6 +8,7 @@ import (
 	"net/http"
 )
 
+/*
 //上传图片的业务逻辑
 func UploadImage(c *gin.Context) {
 	code := e.SUCCESS
@@ -57,3 +58,4 @@ func UploadImage(c *gin.Context) {
 		"data": data,
 	})
 }
+*/

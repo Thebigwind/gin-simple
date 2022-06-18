@@ -9,6 +9,8 @@ import (
 	"gin-simple/pkg/setting"
 	"gin-simple/routers"
 	"github.com/fvbock/endless"
+	"net/http"
+	_ "net/http/pprof"
 )
 
 func main() {
@@ -25,6 +27,9 @@ func main() {
 
 		s.ListenAndServe()
 	*/
+	go func() {
+		log.Println(http.ListenAndServe(":7070", nil))
+	}()
 
 	endless.DefaultReadTimeOut = setting.ReadTimeout
 	endless.DefaultWriteTimeOut = setting.WriteTimeout
